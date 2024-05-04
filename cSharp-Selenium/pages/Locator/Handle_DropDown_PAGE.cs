@@ -27,7 +27,7 @@ namespace cSharp_Selenium.pages.Locator
             
             IWebElement dropDownEle = driver.FindElement(By.XPath("//select[@id='first']"));
             SelectElement select = new SelectElement(dropDownEle);
-            select.SelectByIndex(1);
+            select.SelectByIndex(0);
             Thread.Sleep(3000);
             
         }
