@@ -31,5 +31,17 @@ namespace cSharp_Selenium.pages.Locator
             alertCancelBtn.Click();
             driver.SwitchTo().Alert().Dismiss();
         }
+
+        public void ClickAlertTxtBox()
+        {
+            IWebElement alertTxtBox_LI = driver.FindElement(By.CssSelector(".analystic[href='#Textbox']"));
+            alertTxtBox_LI.Click();
+            IWebElement alertTxtBoxBtn = driver.FindElement(By.CssSelector(".btn.btn-info"));
+            alertTxtBoxBtn.Click();
+            IAlert alert = driver.SwitchTo().Alert();
+            alert.SendKeys("Yash");
+            alert.Accept();
+            Thread.Sleep(2000);
+        }
     }
 }

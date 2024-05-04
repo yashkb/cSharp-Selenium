@@ -28,6 +28,12 @@ namespace cSharp_Selenium.testCases.Locator
             Handle_Alerts_PAGE obj = new Handle_Alerts_PAGE(_driver);
             obj.ClickAlertCancel();
         }
+        [Test]
+        public void TC_003_AlertTextBox()
+        {
+            Handle_Alerts_PAGE obj = new Handle_Alerts_PAGE(_driver);
+            obj.ClickAlertTxtBox();
+        }
 
     }
 }
