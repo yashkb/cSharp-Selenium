@@ -27,5 +27,14 @@ namespace cSharp_Selenium.testCases.Locator
             obj.selectDropDown();
             _test.Log(Status.Pass, "Select 2nd Option");
         }
+        [Test]
+        public void TC_002_SelectDropDownByValue()
+        {
+
+            Handle_DropDown_PAGE obj = new Handle_DropDown_PAGE(_driver);
+
+            obj.selectDropDownByValue();
+            _test.Log(Status.Pass, "Select By Value");
+        }
     }
 }

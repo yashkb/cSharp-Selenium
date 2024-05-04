@@ -30,6 +30,16 @@ namespace cSharp_Selenium.pages.Locator
             select.SelectByIndex(0);
             Thread.Sleep(3000);
             
+            
+        }
+
+        public void selectDropDownByValue()
+        {
+            IWebElement dropDownEle = driver.FindElement(By.XPath("//select[@id='animals']"));
+            SelectElement select = new SelectElement(dropDownEle);
+            select.SelectByText("Avatar");
+            Thread.Sleep(2000);
+            
         }
     }
 }
