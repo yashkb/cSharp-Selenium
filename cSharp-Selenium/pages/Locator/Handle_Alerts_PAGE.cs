@@ -44,6 +44,7 @@ namespace cSharp_Selenium.pages.Locator
             Thread.Sleep(2000);
             Console.WriteLine("Trying to push to master");
             Console.WriteLine("Trying to push to master-2");
+            Console.WriteLine("Trying to push to master-3");
         }
     }
 }
