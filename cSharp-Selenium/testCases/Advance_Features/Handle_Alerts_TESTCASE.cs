@@ -1,12 +1,12 @@
 ﻿using cSharp_Selenium.Base;
-using cSharp_Selenium.pages.Locator;
+using cSharp_Selenium.pages.Advance_Features;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cSharp_Selenium.testCases.Locator
+namespace cSharp_Selenium.testCases.Advance_Features
 {
     internal class Handle_Alerts_TESTCASE : BaseClass
     {
