@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cSharp_Selenium.pages.Locator
+namespace cSharp_Selenium.pages.Advance_Features
 {
-    internal class Handle_Alerts_PAGE  
+    internal class Handle_Alerts_PAGE
     {
         IWebDriver driver;
         public Handle_Alerts_PAGE(IWebDriver driver)
@@ -21,7 +21,7 @@ namespace cSharp_Selenium.pages.Locator
             alertBtn.Click();
             driver.SwitchTo().Alert().Accept();
             Thread.Sleep(2000);
-            
+
         }
         public void ClickAlertCancel()
         {
@@ -42,8 +42,6 @@ namespace cSharp_Selenium.pages.Locator
             alert.SendKeys("Yash");
             alert.Accept();
             Thread.Sleep(2000);
-            Console.WriteLine("Trying to push to master");
-            Console.WriteLine("Trying to push to master-2");
         }
     }
 }
